@@ -205,7 +205,7 @@ with cols[1]:
                 f.write(f"'{datetime.now()} = {name} ({email}) downlaodf data.csv\n'")
             try:
                 sender_email = st.secrets["email"]["sender"]
-                sender_password = st.secrets["email"]["sender"]
+                sender_password = st.secrets["email"]["password"]
     
                 msg = MIMEMultipart()
                 msg["from"] = sender_email
